@@ -1,0 +1,190 @@
+\documentclass[12pt]{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Copenhagen}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\graphicspath{ {imagenes/} }
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{colortbl}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\DisableLigatures{}
+
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    language=c++,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Introducción a C++}
+\subtitle{Tipos de datos y Operadores}
+\author{Tomás Peiretti}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Tipos de datos fundamentales}
+    \begin{columns}
+        \column{0.8\textwidth}Una variable es una porción de memoria que almacena un valor. Pero, ¿Qué \alert{tipos de valores} se pueden almacenar?
+        \column{0.2\textwidth}\includegraphics[width=\textwidth]{thinking.png}
+    \end{columns}
+
+    \medskip
+
+    Dentro de los tipos de datos fundamentales de c++ existen:
+    \begin{itemize}
+        \item Caracteres
+        \item Números enteros
+        \item Números de punto flotante
+        \item Booleanos (valores de verdad)
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Tipos de datos fundamentales}
+    \begin{table}[]
+        \tiny
+        \centering
+        \begin{tabular}{|l|l|l|l|}
+            \hline
+            \rowcolor[HTML]{E0E0E0} 
+            \multicolumn{1}{|c|}{\cellcolor[HTML]{E0E0E0}\textbf{Grupo}} & \multicolumn{1}{c|}{\cellcolor[HTML]{E0E0E0}\textbf{Nombres de tipo}} & \multicolumn{1}{c|}{\cellcolor[HTML]{E0E0E0}\textbf{\begin{tabular}[c]{@{}c@{}}Precisión/Tamaño\end{tabular}}} & \multicolumn{1}{c|}{\cellcolor[HTML]{E0E0E0}\textbf{Rango de valores}} \\ \hline
+            \rowcolor[HTML]{90DFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{char} & \textbf{1 byte = 8 bits} & \textbf{0 a 255} \\ \cline{2-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{char16\_t} & 2 bytes = 16 bits & 0 a 65,535 \\ \cline{2-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{char32\_t} & 4 bytes = 32 bits & 0 a 4,294,697,295 \\ \cline{2-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \multirow{-4}{*}{\cellcolor[HTML]{FFFFFF}Caracteres} & \textbf{wchar\_t} & \begin{tabular}[c]{@{}l@{}}Puede almacenar \\cualquier\\ caracter soportado\end{tabular} &  \\ \hline
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{short} & 2 bytes = 16 bits & -32,768 a 32,767 \\ \cline{2-4} 
+            \rowcolor[HTML]{90DFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{int} & \textbf{4 bytes = 32 bits} & \textbf{-2,147,483,684 a 2,147,483,647} \\ \cline{2-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{long} & 4 bytes = 32 bits & -2,147,483,684 a 2,147,483,647 \\ \cline{2-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \multirow{-4}{*}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}l@{}}Números\\ enteros\\ con signo\end{tabular}} & \textbf{long long} & \textbf{8 bytes = 64 bits} & \textbf{\begin{tabular}[c]{@{}l@{}}-9,223,372,036,854,775,808 a\\  9,223,372,036,854,775,807\end{tabular}} \\ \hline
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{unsigned short} & \cellcolor[HTML]{FFFFFF} & 0 a 65,535 \\ \cline{2-2} \cline{4-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{unsigned} & \cellcolor[HTML]{FFFFFF} & 0 a 4,294,967,295 \\ \cline{2-2} \cline{4-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \textbf{unsigned long} & \cellcolor[HTML]{FFFFFF} & 0 a 4,294,967,295 \\ \cline{2-2} \cline{4-4} 
+            \rowcolor[HTML]{FFFFFF} 
+            \multirow{-4}{*}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}l@{}}Números\\ enteros\\ sin signo\end{tabular}} & \textbf{unsigned long long} & \multirow{-4}{*}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}l@{}}Mismo tamaño que\\ los enteros con signo\end{tabular}} & 0 a 18,446,744,073,709,551,615 \\ \hline
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{90DFFF}\textbf{float} & \cellcolor[HTML]{90DFFF}\textbf{4 bytes = 32 bits} & \cellcolor[HTML]{FFFFFF} \\ \cline{2-3}
+            \rowcolor[HTML]{FFFFFF} 
+            \cellcolor[HTML]{FFFFFF} & \cellcolor[HTML]{90DFFF}\textbf{double} & \cellcolor[HTML]{90DFFF}\textbf{8 bytes = 64 bits} & \cellcolor[HTML]{FFFFFF} \\ \cline{2-3}
+            \rowcolor[HTML]{FFFFFF} 
+            \multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}l@{}}Números de \\ punto flotante\end{tabular}} & \textbf{long double} & 8 bytes o mayor & \multirow{-3}{*}{\cellcolor[HTML]{FFFFFF}\href{https://en.cppreference.com/w/cpp/language/types}{Ver docs}} \\ \hline
+            \rowcolor[HTML]{90DFFF} 
+            \cellcolor[HTML]{FFFFFF}Boolean & \textbf{bool} & \textbf{True o false} & \textbf{true, false} \\ \hline
+            \rowcolor[HTML]{FFFFFF} 
+            Void & \textbf{void} & No almacena valor &  \\ \hline
+        \end{tabular}
+    \end{table}
+    \centering\footnotesize\url{https://en.cppreference.com/w/cpp/language/types}
+\end{frame}
+
+\begin{frame}{Operadores}
+    \begin{table}[]
+        \centering
+        \tiny
+        \def\arraystretch{2}
+        \begin{tabular}{lccl|l|c|c|}
+            \cline{1-3} \cline{5-7}
+            \multicolumn{1}{|c|}{\cellcolor[HTML]{E0E0E0}\textbf{Grupo}} & \multicolumn{1}{c|}{\cellcolor[HTML]{E0E0E0}\textbf{Operador}} & \multicolumn{1}{c|}{\cellcolor[HTML]{E0E0E0}\textbf{Ejemplo}} &  & \multicolumn{1}{c|}{\cellcolor[HTML]{E0E0E0}\textbf{Grupo}} & \cellcolor[HTML]{E0E0E0}\textbf{Operador} & \cellcolor[HTML]{E0E0E0}\textbf{Ejemplo} \\ \cline{1-3} \cline{5-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{+}} & \multicolumn{1}{c|}{a + b} &  &  & \textbf{==} & x ==  b \\ \cline{2-3} \cline{6-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{-}} & \multicolumn{1}{c|}{a - 5} &  &  & != & x != 'a' \\ \cline{2-3} \cline{6-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{*}} & \multicolumn{1}{c|}{x * y} &  &  & \textbf{\textless{}} & x \textless z \\ \cline{2-3} \cline{6-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{/}} & \multicolumn{1}{c|}{x / y} &  &  & \textgreater{} & x \textgreater 100 \\ \cline{2-3} \cline{6-7} 
+            \multicolumn{1}{|l|}{\multirow{-5}{*}{Aritméticos}} & \multicolumn{1}{c|}{\%} & \multicolumn{1}{c|}{a \% 10} &  &  & \textless{}= & x \textless{}= y \\ \cline{1-3} \cline{6-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{=}} & \multicolumn{1}{c|}{a = 1} &  & \multirow{-6}{*}{Relacionales} & \textgreater{}= & x \textgreater{}= 0 \\ \cline{2-3} \cline{5-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{+=}} & \multicolumn{1}{c|}{a += 1} &  &  & ! & ! (x \textgreater{}= 0) \\ \cline{2-3} \cline{6-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{-=}} & \multicolumn{1}{c|}{a -= 1} &  &  & \&\& & x \textgreater 0 \&\& x \textless{}= 100 \\ \cline{2-3} \cline{6-7} 
+            \multicolumn{1}{|l|}{} & \multicolumn{1}{c|}{\textbf{*=}} & \multicolumn{1}{c|}{a *= 2} &  & \multirow{-3}{*}{Lógicos} & || & x \textless -10 || x \textgreater 10 \\ \cline{2-3} \cline{5-7} 
+            \multicolumn{1}{|l|}{\multirow{-5}{*}{Asignación}} & \multicolumn{1}{c|}{/=} & \multicolumn{1}{c|}{a /= 10} &  &  & \textbf{++} & x++ o ++x \\ \cline{1-3} \cline{6-7} 
+            & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  &  & -- & x-- o --x \\ \cline{6-7} 
+            & \multicolumn{1}{l}{} & \multicolumn{1}{l}{} &  & \multirow{-3}{*}{Otros} & sizeof & sizeof(x) \\ \cline{5-7} 
+        \end{tabular}
+    \end{table}
+    \centering\footnotesize\url{https://cplusplus.com/doc/tutorial/operators}
+\end{frame}
+
+\begin{frame}[fragile]{Operador de "casteo" de tipo}
+    Como sabemos, el compilador de C++ lleva a cabo conversiones implícitas. Por lo que, en algunos casos, necesitamos transformar un tipo de dato para poder manipularlo. 
+
+    \medskip
+
+    El operador de casteo permite convertir un valor que es de un determinado tipo de dato a otro tipo de dato. Hay dos maneras de utilizarlo:
+\begin{lstlisting}[basicstyle=\scriptsize]
+int main() {
+    float x = 101.25;
+    // casteando x a int para poder usar %
+    cout << (int) x % 10 << endl;
+    // otra manera de castear x a int
+    cout << int(x) % 10 << endl;
+    // ejemplo: castear el dividendo para que el resultado de la division sea float y no int
+    cout << "1/2 = " << 1/2 << endl; // 1/2 = 0
+    cout << "1/2 = " << float(1)/2 << endl; // 1/2 = 0.5
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Ejercicios}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1001}{Beecrowd 1001}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1002}{Beecrowd 1002}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1003}{Beecrowd 1003}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1004}{Beecrowd 1004}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1005}{Beecrowd 1005}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1006}{Beecrowd 1006}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1007}{Beecrowd 1007}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1008}{Beecrowd 1008}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1009}{Beecrowd 1009}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1010}{Beecrowd 1010}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1011}{Beecrowd 1011}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1012}{Beecrowd 1012}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1013}{Beecrowd 1013}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1014}{Beecrowd 1014}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1015}{Beecrowd 1015}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1016}{Beecrowd 1016}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1017}{Beecrowd 1017}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1018}{Beecrowd 1018}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1019}{Beecrowd 1019}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1020}{Beecrowd 1020}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1021}{Beecrowd 1021}
+        \end{itemize}
+    \end{multicols}
+\end{frame}
+
+\end{document}
