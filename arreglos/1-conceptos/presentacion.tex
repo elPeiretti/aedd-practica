@@ -36,7 +36,7 @@
 
 \title{Arreglos en C++}
 \subtitle{Conceptos básicos}
-\author{Ing.Tomás Peiretti}
+\author{Tomás Peiretti}
 \date{}
 
 \begin{document}
@@ -73,6 +73,7 @@
 int main() {
     int arr1[10]; // constante literal
     int arr2[tam]; // constante global
+    return 0;
 }
 \end{lstlisting}
 \end{frame}
@@ -89,6 +90,8 @@ int main() {
     // imprimir los primeros 10 elementos
     for (int i=0; i<10; i++)
         cout << arreglo[i] << endl;
+    
+    return 0;
 }
 \end{lstlisting}
 \end{frame}
@@ -107,6 +110,8 @@ int main() {
     int arr5[5];
     for(int i=0; i<5; i++)
         arr5[i]=7;
+
+    return 0;
 }
 \end{lstlisting}
         \end{columns}
@@ -126,6 +131,7 @@ int main() {
     int arreglo[10] = {1, 2, 3, 4, 5};
     for (int i=0; i<5; i++)
         cout << arreglo[i] << endl;
+    return 0;
 }
 \end{lstlisting}
     \includegraphics[width=\textwidth]{tamlogico.png}
