@@ -1,0 +1,191 @@
+\documentclass[12pt]{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Copenhagen}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\graphicspath{ {imagenes/} }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    language=c++,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Introducción a C++}
+\subtitle{Estructuras de control}
+\author{Tomás Peiretti}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Estructuras de control}
+    C++ provee estructuras y sentencias de control de flujo que permiten especificar qué es lo que deseamos que nuestro programa haga, como repetir porciones de código o tomar decisiones.
+    \begin{columns}
+        \column{0.6\textwidth}\begin{itemize}
+            \item Estructuras condicionales:
+            \begin{itemize}
+                \item if-else
+                \item switch
+            \end{itemize} 
+            \item Estructuras iterativas:
+            \begin{itemize}
+                \item while
+                \item do-while
+                \item for
+            \end{itemize}
+            \item Sentencias de salto:
+            \begin{itemize}
+                \item break
+                \item continue
+                \item goto
+            \end{itemize}
+        \end{itemize}
+        \column{0.4\textwidth}\includegraphics[width=\textwidth]{cool.png}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Estructuras condicionales: if-else}
+    \centering{if (\alert{expresión condicional})}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    int x; cin >> x;
+    // imprimir el contenido de la variable X solo si x es mayor a 100
+    if (x > 100)
+        cout << x << endl;
+    return 0;
+}
+\end{lstlisting}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    int x; cin >> x;
+    // imprimir el contenido de la variable X solo si x es mayor a 100
+    // sino, imprimir el mensaje "x es menor que 100"
+    if (x > 100)
+        cout << x << endl;
+    else
+        cout << "x es menor que 100" << endl;
+    return 0;
+}
+\end{lstlisting}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    int x; cin >> x;
+    // imprimir el contenido de la variable X solo si x es mayor a 100
+    if (x > 100) {
+        cout << x << endl;
+    }
+    return 0;
+}
+    \end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Estructuras condicionales: if-else}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    char x; cin >> x;
+    // si x es una letra minuscula, imprimir X y luego cambiarla por la letra Z
+    if (x >= 'a' && x <= 'z') {
+        cout << x << endl;
+        x = 'Z';
+    }
+    return 0;
+}
+\end{lstlisting}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    int x; cin >> x;
+    // si x >= 100, imprimir: "x es mayor a 100"
+    // si x > 0 y x <= 100, imprimir: "x se encuentra en (0, 100]"
+    // si x <= 0, imprimir "fuera de rango"
+    if (x <= 0)
+        cout << "fuera de rango" << endl;
+    else if (x <= 100)
+        cout << " x se encuentra en (0,100]" << endl;
+    else
+        cout << " x es mayor a 100" << endl;
+    return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Estructuras condicionales: switch}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    cout << "seleccione una opcion: a, b o c" << endl;
+    char opcion; cin >> opcion;
+
+    switch(opcion) {
+    case 'a': 
+        cout << ":)" << endl;
+        break;
+    case 'b':
+        cout << ":O" << endl;
+        break;
+    case 'c':
+        cout << ";-)" << endl;
+        break;
+    default:
+        cout << "opcion seleccionada incorrecta" << endl;
+    }
+
+    // que seria equivalente a:
+    if (opcion == 'a')
+        cout << ":)" << endl;
+    else if (opcion == 'b')
+        cout << ":O" << endl;
+    else if (opcion == 'c')
+        cout << ":-)" << endl;
+    else
+        cout << "opcion seleccionada incorrecta" << endl;
+    return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Ejercicios de estructuras condicionales}
+    \begin{multicols}{2}
+        \begin{itemize}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1035}{Beecrowd 1035}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1037}{Beecrowd 1037}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1038}{Beecrowd 1038}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1040}{Beecrowd 1040}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1041}{Beecrowd 1041}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1042}{Beecrowd 1042}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1043}{Beecrowd 1043}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1044}{Beecrowd 1044}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1045}{Beecrowd 1045}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1048}{Beecrowd 1048}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1049}{Beecrowd 1049}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1050}{Beecrowd 1050}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1051}{Beecrowd 1051}
+        \end{itemize}
+    \end{multicols}
+\end{frame}
+
+\end{document}
