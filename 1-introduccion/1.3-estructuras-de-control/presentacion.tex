@@ -6,6 +6,9 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{multicol}
+\usepackage{microtype}
+\usepackage[T1]{fontenc}
+\DisableLigatures{}
 \graphicspath{ {imagenes/} }
 
 \definecolor{codegreen}{rgb}{0,0.6,0}
@@ -186,6 +189,155 @@ int main() {
             \item \href{https://judge.beecrowd.com/es/problems/view/1051}{Beecrowd 1051}
         \end{itemize}
     \end{multicols}
+\end{frame}
+
+\begin{frame}[fragile]{Estructuras iterativas}
+    \begin{columns}
+        \column{0.7\textwidth}\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    int w = 1;
+    while (w <= 100){
+        cout << "while: iteracion " << w << endl; 
+        w++;
+    }
+
+    for (int f = 1 ; f <= 100 ; f++){
+        cout << "for: iteracion " << f << endl;
+    } 
+
+    int dw = 1;
+    do {
+        cout << "do-while: iteracion " << dw << endl;
+        dw++;
+    } while(dw <= 100);
+}
+\end{lstlisting}
+        \column{0.35\textwidth}\includegraphics[width=\textwidth]{iterativas_meme.jpg}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Estructuras iterativas}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    // ingresar N enteros por teclado
+    int n; cin >> n;
+    for (int i = 0 ; i < n ; i++){
+        int x; cin >> x;
+        cout << "entero nro " << i + 1 << "= " << x << endl;
+    }
+
+    // ingresar 2 enteros por teclado hasta fin de archivo (EOF)
+    int e1, e2;
+    while (cin >> e1 >> e2){
+        cout << "Entero 1 = " << e1 << endl;
+        cout << "Entero 2 = " << e2 << endl;   
+    }
+}
+\end{lstlisting}
+\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    // Leer N numeros e imprimir el mayor
+    int N, mayor = -1000000;
+    cin >> N;
+    
+    while (N--){
+        int x; cin >> x;
+        if (x > mayor)
+            mayor = x;
+    }
+    
+    cout << "El mayor es: " << mayor << endl;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Ejercicios de estructuras iterativas}
+    \footnotesize\begin{multicols}{3}
+        \begin{itemize}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1059}{Beecrowd 1059}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1060}{Beecrowd 1060}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1064}{Beecrowd 1064}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1065}{Beecrowd 1065}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1066}{Beecrowd 1066}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1067}{Beecrowd 1067}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1070}{Beecrowd 1070}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1071}{Beecrowd 1071}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1072}{Beecrowd 1072}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1073}{Beecrowd 1073}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1074}{Beecrowd 1074}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1075}{Beecrowd 1075}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1078}{Beecrowd 1078}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1079}{Beecrowd 1079}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1080}{Beecrowd 1080}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1095}{Beecrowd 1095}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1096}{Beecrowd 1096}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1097}{Beecrowd 1097}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1098}{Beecrowd 1098}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1099}{Beecrowd 1099}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1101}{Beecrowd 1101}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1113}{Beecrowd 1113}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1114}{Beecrowd 1114}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1115}{Beecrowd 1115}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1116}{Beecrowd 1116}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1117}{Beecrowd 1117}
+            \item \href{https://judge.beecrowd.com/es/problems/view/1133}{Beecrowd 1133}
+        \end{itemize}
+    \end{multicols}
+\end{frame}
+
+\begin{frame}[fragile]{Sentencias de salto}
+    \footnotesize Solo utilizaremos la sentencia \alert{break} para evitar el "encadenamiento" en un switch: \\
+    \begin{columns}
+        \column{0.5\textwidth}\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    char c;
+    cin >> c;
+    // sin break
+    switch(c) {
+    case 'A': 
+        cout << "A de Avion";
+    case 'E':
+        cout << "E de Ester";
+    case 'I':
+        cout << "I de Iglesia";
+    case 'O':
+        cout << "O de Oso";
+    case 'U':
+        cout << "U de Uranio";
+    }
+    // si se ingresa "O", se imprimira:
+    // O de OsoU de Uranio
+}
+\end{lstlisting}
+        \column{0.5\textwidth}\begin{lstlisting}[basicstyle=\tiny]
+int main() {
+    char c;
+    cin >> c;
+    // con break
+    switch(c) {
+    case 'A': 
+        cout << "A de Avion";
+        break;
+    case 'E':
+        cout << "E de Ester";
+        break;
+    case 'I':
+        cout << "I de Iglesia";
+        break;
+    case 'O':
+        cout << "O de Oso";
+        break;
+    case 'U':
+        cout << "U de Uranio";
+    }
+    // si se ingresa "O", se imprimira:
+    // O de Oso
+}
+\end{lstlisting}    
+    \end{columns}
+    \begin{center}
+        \scriptsize\url{https://cplusplus.com/doc/tutorial/control/#jumps}
+    \end{center}
 \end{frame}
 
 \end{document}
