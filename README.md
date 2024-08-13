@@ -42,6 +42,11 @@
 
 ### Parcial 2
 
+#### Sitio juez
+- [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf)
+- [MCDs Unitarios](./parciales/parcial-2/sitio-juez/MCDs-Unitarios.pdf)
+- [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf)
+- [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf)
 
 ## Listado de problemas por categoría
 
