@@ -19,6 +19,9 @@
 
 #### Sitio juez
 - [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf)
+- [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf)
+- [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf)
+- [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf)
 - https://judge.beecrowd.com/es/problems/view/1094
 - https://judge.beecrowd.com/es/problems/view/1118
 - https://judge.beecrowd.com/es/problems/view/1131
