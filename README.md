@@ -16,13 +16,26 @@
 ## Ejercicios de parcial para practicar
 
 ### Parcial 1
-- [Número Feliz](./parciales/parcial-1/Numero-feliz.pdf)
+
+#### Sitio juez
+- [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf)
 - https://judge.beecrowd.com/es/problems/view/1094
 - https://judge.beecrowd.com/es/problems/view/1118
-- [Hábitos de estudio](./parciales/parcial-1/Habitos-de-estudio.pdf)
 - https://judge.beecrowd.com/es/problems/view/1131
 - https://judge.beecrowd.com/es/problems/view/3454
 - https://judge.beecrowd.com/es/problems/view/2304
+- [2022 A](./parciales/parcial-1/sitio-juez/2022-A.pdf)
+- [2022 B](./parciales/parcial-1/sitio-juez/2022-B.pdf)
+- [2022 C](./parciales/parcial-1/sitio-juez/2022-C.pdf)
+- [2022 D](./parciales/parcial-1/sitio-juez/2022-D.pdf)
+- [2022 E](./parciales/parcial-1/sitio-juez/2022-E.pdf)
+- [2022 F](./parciales/parcial-1/sitio-juez/2022-F.pdf)
+- [2022 G](./parciales/parcial-1/sitio-juez/2022-G.pdf)
+
+#### Papel
+- [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf)
+- [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf)
+- [Microprocesador](./parciales/parcial-1/papel/Microprocesador.pdf)
 
 ### Parcial 2
 
