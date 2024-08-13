@@ -15,38 +15,34 @@
 
 ## Ejercicios de parcial para practicar
 
-### Parcial 1
+### Ejercicios de Sitio Juez
 
-#### Sitio juez
-- [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf)
-- [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf)
-- [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf)
-- [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf)
-- https://judge.beecrowd.com/es/problems/view/1094
-- https://judge.beecrowd.com/es/problems/view/1118
-- https://judge.beecrowd.com/es/problems/view/1131
-- https://judge.beecrowd.com/es/problems/view/3454
-- https://judge.beecrowd.com/es/problems/view/2304
-- [2022 A](./parciales/parcial-1/sitio-juez/2022-A.pdf)
-- [2022 B](./parciales/parcial-1/sitio-juez/2022-B.pdf)
-- [2022 C](./parciales/parcial-1/sitio-juez/2022-C.pdf)
-- [2022 D](./parciales/parcial-1/sitio-juez/2022-D.pdf)
-- [2022 E](./parciales/parcial-1/sitio-juez/2022-E.pdf)
-- [2022 F](./parciales/parcial-1/sitio-juez/2022-F.pdf)
-- [2022 G](./parciales/parcial-1/sitio-juez/2022-G.pdf)
+| Parcial 1 | Parcial 2 |
+|:---------|:---------:|
+| [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) | [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf) |
+| [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) | [MCDs Unitarios](./parciales/parcial-2/sitio-juez/MCDs-Unitarios.pdf) |
+| [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf) |
+| [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) | [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf) |
+| [Beecrowd 1094](https://judge.beecrowd.com/es/problems/view/1094) |
+| [Beecrowd 1118](https://judge.beecrowd.com/es/problems/view/1118) |
+| [Beecrowd 1131](https://judge.beecrowd.com/es/problems/view/1131) |
+| [Beecrowd 3454](https://judge.beecrowd.com/es/problems/view/3454) |
+| [Beecrowd 2304](https://judge.beecrowd.com/es/problems/view/2304) |
+| [2022 A](./parciales/parcial-1/sitio-juez/2022-A.pdf) |
+| [2022 B](./parciales/parcial-1/sitio-juez/2022-B.pdf) |
+| [2022 C](./parciales/parcial-1/sitio-juez/2022-C.pdf) |
+| [2022 D](./parciales/parcial-1/sitio-juez/2022-D.pdf) |
+| [2022 E](./parciales/parcial-1/sitio-juez/2022-E.pdf) |
+| [2022 F](./parciales/parcial-1/sitio-juez/2022-F.pdf) |
+| [2022 G](./parciales/parcial-1/sitio-juez/2022-G.pdf) |
 
-#### Papel
-- [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf)
-- [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf)
-- [Microprocesador](./parciales/parcial-1/papel/Microprocesador.pdf)
+### Ejercicios en Papel
 
-### Parcial 2
-
-#### Sitio juez
-- [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf)
-- [MCDs Unitarios](./parciales/parcial-2/sitio-juez/MCDs-Unitarios.pdf)
-- [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf)
-- [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf)
+| Parcial 1 |
+|:----------|
+| [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) |
+| [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) |
+| [Microprocesador](./parciales/parcial-1/papel/Microprocesador.pdf) |
 
 ## Listado de problemas por categoría
 
