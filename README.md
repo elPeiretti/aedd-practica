@@ -2,7 +2,7 @@
 
 ## Listado de temas
 
-1. Introducción: estructura básica de un programa en C++
+1. [Introducción: estructura básica de un programa en C++](./1-introduccion/presentacion.pdf)
 2. [Tipos de dato y operadores](./2-tipos-de-dato-y-operadores/presentacion.pdf)
 3. [Estructuras de control](./3-estructuras-de-control/presentacion.pdf)
 4. [Funciones](./4-funciones/presentacion.pdf)
