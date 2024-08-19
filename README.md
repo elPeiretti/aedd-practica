@@ -24,8 +24,6 @@
 | [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf) |
 | [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) | [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf) |
 | [Beecrowd 1094](https://judge.beecrowd.com/es/problems/view/1094) |
-| [Beecrowd 1118](https://judge.beecrowd.com/es/problems/view/1118) |
-| [Beecrowd 1131](https://judge.beecrowd.com/es/problems/view/1131) |
 | [Beecrowd 3454](https://judge.beecrowd.com/es/problems/view/3454) |
 | [Beecrowd 2304](https://judge.beecrowd.com/es/problems/view/2304) |
 | [2022 A](./parciales/parcial-1/sitio-juez/2022-A.pdf) |
