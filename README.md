@@ -18,7 +18,7 @@
 ### Ejercicios de Sitio Juez
 
 | Parcial 1 | Parcial 2 |
-|:---------|:---------:|
+|:---------:|:---------:|
 | [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) | [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf) |
 | [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) | [MCDs Unitarios](./parciales/parcial-2/sitio-juez/MCDs-Unitarios.pdf) |
 | [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf) |
@@ -36,11 +36,10 @@
 
 ### Ejercicios en Papel
 
-| Parcial 1 |
-|:----------|
-| [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) |
+| Parcial 1 | Parcial 2 |
+|:---------:|:---------:|
+| [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) | [Microprocesador](./parciales/parcial-2/papel/Microprocesador.pdf) |
 | [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) |
-| [Microprocesador](./parciales/parcial-1/papel/Microprocesador.pdf) |
 
 ## Listado de problemas por categoría
 
