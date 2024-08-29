@@ -17,9 +17,9 @@
 
 ### Ejercicios de Sitio Juez
 
-| Parcial 1 | Parcial 2 |
-|:---------:|:---------:|
-| [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) | [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf) |
+| Parcial 1 | Parcial 2 | Parcial 3 |
+|:---------:|:---------:|:---------:|
+| [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) | [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf) | [Borrado en Lista Enlazada 1](./parciales/parcial-3/sitio-juez/2023-Enlazadas-1.pdf)
 | [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) | [MCDs Unitarios](./parciales/parcial-2/sitio-juez/MCDs-Unitarios.pdf) |
 | [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf) |
 | [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) | [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf) |
