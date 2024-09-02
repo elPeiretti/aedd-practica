@@ -41,7 +41,9 @@
 | Parcial 1 | Parcial 2 |
 |:---------:|:---------:|
 | [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) | [Microprocesador](./parciales/parcial-2/papel/Microprocesador.pdf) |
-| [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) |
+| [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) | [Tunel Subfluvial](./parciales/parcial-2/papel/Tunel-Subfluvial.pdf)
+| [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) |
+| [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) |
 
 ## Listado de problemas por categoría
 
