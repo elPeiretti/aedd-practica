@@ -34,7 +34,6 @@
 | [2022 D](./parciales/parcial-1/sitio-juez/2022-D.pdf) |
 | [2022 E](./parciales/parcial-1/sitio-juez/2022-E.pdf) |
 | [2022 F](./parciales/parcial-1/sitio-juez/2022-F.pdf) |
-| [2022 G](./parciales/parcial-1/sitio-juez/2022-G.pdf) |
 
 ### Ejercicios en Papel
 
@@ -43,7 +42,7 @@
 | [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) | [Microprocesador](./parciales/parcial-2/papel/Microprocesador.pdf) |
 | [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) | [Tunel Subfluvial](./parciales/parcial-2/papel/Tunel-Subfluvial.pdf)
 | [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) |
-| [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) |
+| [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) |
 
 ## Listado de problemas por categoría
 
