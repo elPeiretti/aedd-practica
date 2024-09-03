@@ -24,7 +24,7 @@
 | [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf) |
 | [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) | [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf) |
 | [Sistema de Tarifas de Envío](./parciales/parcial-1/sitio-juez/Tarifas-de-Envio.pdf) |
-| [Índice de Masa Corporal](./parciales/parcial-1/sitio-juez/Indice-Masa-Corporal.pdf) |
+| [Índice de Masa Corporal](./parciales/parcial-1/sitio-juez/Indice-Masa-Corporal.pdf) ([solución](./parciales/parcial-1/sitio-juez/Indice-Masa-Corporal.cpp))|
 | [Beecrowd 1094](https://judge.beecrowd.com/es/problems/view/1094) |
 | [Beecrowd 3454](https://judge.beecrowd.com/es/problems/view/3454) |
 | [Beecrowd 2304](https://judge.beecrowd.com/es/problems/view/2304) |
