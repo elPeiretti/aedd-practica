@@ -43,6 +43,7 @@
 | [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) | [Tunel Subfluvial](./parciales/parcial-2/papel/Tunel-Subfluvial.pdf)
 | [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) |
 | [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) |
+| [Amartizando](./parciales/parcial-1/papel/Amartizando.pdf) |
 
 ## Listado de problemas por categoría
 
