@@ -19,12 +19,16 @@
 
 | Parcial 1 | Parcial 2 | Parcial 3 |
 |:---------:|:---------:|:---------:|
-| [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) ([solución](./parciales/parcial-1/sitio-juez/Numero-feliz.cpp)) | [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf) | [Borrado en Lista Enlazada 1](./parciales/parcial-3/sitio-juez/2023-Enlazadas-1.pdf)
-| [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) | [MCDs Unitarios](./parciales/parcial-2/sitio-juez/MCDs-Unitarios.pdf) |
-| [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf) |
-| [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) | [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf) |
+| [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) ([solución](./parciales/parcial-1/sitio-juez/Numero-feliz.cpp)) | | [Borrado en Lista Enlazada 1](./parciales/parcial-3/sitio-juez/2023-Enlazadas-1.pdf)
+| [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) |
+| [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) |
+| [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) |
 | [Sistema de Tarifas de Envío](./parciales/parcial-1/sitio-juez/Tarifas-de-Envio.pdf) |
 | [Índice de Masa Corporal](./parciales/parcial-1/sitio-juez/Indice-Masa-Corporal.pdf) ([solución](./parciales/parcial-1/sitio-juez/Indice-Masa-Corporal.cpp))|
+| [FiltroNacci](./parciales/parcial-2/sitio-juez/FiltroNacci.pdf) |
+| [MCDs Unitarios](./parciales/parcial-2/sitio-juez/MCDs-Unitarios.pdf) |
+| [Tiempo Veloz](./parciales/parcial-2/sitio-juez/Tiempo-Veloz.pdf) |
+| [Productoria Vocales](/parciales/parcial-2/sitio-juez/Productoria-Vocales.pdf) |
 | [Beecrowd 1094](https://judge.beecrowd.com/es/problems/view/1094) |
 | [Beecrowd 3454](https://judge.beecrowd.com/es/problems/view/3454) |
 | [Beecrowd 2304](https://judge.beecrowd.com/es/problems/view/2304) |
