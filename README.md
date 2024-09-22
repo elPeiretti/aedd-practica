@@ -49,6 +49,14 @@
 | [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) |
 | [Amartizando](./parciales/parcial-1/papel/Amartizando.pdf) |
 
+## Ejercicios de examen final
+| Sitio Juez | Papel |
+|:----------:|:-----:|
+| [OmegaUp - 22/12/20](./finales/sitio-juez/OmegaUp-22-12-2020.pdf) |
+| [OmegaUp - 7/4/21](./finales/sitio-juez/OmegaUp-07-04-2021.pdf) |
+| [OmegaUp - 7/7/21](./finales/sitio-juez/OmegaUp-07-07-2021.pdf) |
+| [OmegaUp - 28/7/21](./finales/sitio-juez/OmegaUp-28-07-2021.pdf) |
+
 ## Listado de problemas por categoría
 
 ### Primeros problemas
