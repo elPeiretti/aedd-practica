@@ -48,6 +48,8 @@
 | [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) |
 | [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) |
 | [Amartizando](./parciales/parcial-1/papel/Amartizando.pdf) |
+| [Entrenamientos](./parciales/parcial-1/papel/Entrenamientos.pdf) |
+| [Final de salto con garrocha](./parciales/parcial-1/papel/Final-de-salto-con-garrocha.pdf) |
 
 ## Ejercicios de examen final
 | Sitio Juez | Papel |
