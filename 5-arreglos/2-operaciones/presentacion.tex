@@ -125,7 +125,7 @@ void eliminarElemento(char arr[], int &tl, int posicion) {
     
     if (tl == 0)
         cout << "ERROR! no hay elementos para eliminar";
-    if (posicion >= tl)
+    else if (posicion >= tl)
         cout << "ERROR! posicion invalida";
     else {
         // borrar un elemento implica desplazar todos los 
@@ -142,7 +142,7 @@ void eliminarElemento(char arr[], int &tl, int posicion) {
 \end{lstlisting}
 \end{frame}
     
-\begin{frame}[fragile]{Eliminar un elemento del arreglo}
+\begin{frame}[fragile]{Agregar un elemento al arreglo}
 \begin{lstlisting}[basicstyle=\tiny]
 #define TF 1500
 
@@ -151,7 +151,7 @@ void agregarElemento(int arr[], int &tl, int posicion, int elemento) {
     
     if (tl == TF)
         cout <<"ERROR! ya no queda espacio";
-    if (posicion > tl)
+    else if (posicion > tl)
         cout << "ERROR! posicion invalida";
     else {
         // agregar un elemento implica desplazar todos los 
@@ -229,11 +229,11 @@ void buscarChar(const char arr[], int tam, char c) {
 \end{frame}
 
 \begin{frame}{Buscar un elemento: búsqueda lineal}
-    La \alert{búsqueda lineal} es un algormitmo simple de implementar y que aplica para gran variedad de casos. Pero, qué ocurre si el arreglo sobre el que estamos realizando la búsqueda tiene 100 millones de elementos?
+    La \alert{búsqueda lineal} es un algoritmo simple de implementar y que aplica para gran variedad de casos. Pero, qué ocurre si el arreglo sobre el que estamos realizando la búsqueda tiene 100 millones de elementos?
 \end{frame}
 
 \begin{frame}{Buscar un elemento: búsqueda lineal}
-    La \alert{búsqueda lineal} es un algormitmo simple de implementar y que aplica para gran variedad de casos. Pero, qué ocurre si el arreglo sobre el que estamos realizando la búsqueda tiene 100 millones de elementos?
+    La \alert{búsqueda lineal} es un algoritmo simple de implementar y que aplica para gran variedad de casos. Pero, qué ocurre si el arreglo sobre el que estamos realizando la búsqueda tiene 100 millones de elementos?
     
     \medskip
 
@@ -248,6 +248,7 @@ void buscarChar(const char arr[], int tam, char c) {
 // buscar de una manera mas eficiente, rapida.....
 // -> busqueda binaria
 // (solo se puede aplicar si el arreglo se encuentra ordenado)
+// retorna la posicion en la que se encuentra el numero buscado
 int buscarNumero(const int arr[], int tl, int num) {
 	int izq = 0, der = tl-1;
 	int medio;
