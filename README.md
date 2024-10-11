@@ -177,6 +177,19 @@
 - https://judge.beecrowd.com/es/problems/view/1534
 - https://judge.beecrowd.com/es/problems/view/1557
 - https://judge.beecrowd.com/es/problems/view/1827
+- https://omegaup.com/arena/problem/Matriz/
+- https://omegaup.com/arena/problem/Matriz-Diagonal/
+- https://omegaup.com/arena/problem/Encuentra-el-tesoro/
+- https://omegaup.com/arena/problem/Comida-del-maestro-carlos/
+- https://omegaup.com/arena/problem/Cuadro-Magico/
+- https://omegaup.com/arena/problem/Matriz-X/
+- https://omegaup.com/arena/problem/Matrices-Simples/
+- https://omegaup.com/arena/problem/Desenterrando-el-tesoro/
+- https://omegaup.com/arena/problem/Diagonales-Iguales/
+- https://omegaup.com/arena/problem/Cortando-el-Cesped-/
+- https://omegaup.com/arena/problem/Matrices-giradas/
+- https://omegaup.com/arena/problem/Valles/
+- https://omegaup.com/arena/problem/buscaminas1/
 
 ### String
 - https://codeforces.com/group/yg7WhsFsAp/contest/355490/problem/P03
