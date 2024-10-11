@@ -143,6 +143,17 @@
 - https://judge.beecrowd.com/es/problems/view/1171
 - https://judge.beecrowd.com/es/problems/view/1410
 - https://codeforces.com/group/yg7WhsFsAp/contest/355490/problem/P02
+- https://omegaup.com/arena/problem/Imprime-arreglo-1/
+- https://omegaup.com/arena/problem/Encuentra-el-mayor/
+- https://omegaup.com/arena/problem/Ignorando-los-ultimos-elementos/
+- https://omegaup.com/arena/problem/Sumando-dos-conjuntos/
+- https://omegaup.com/arena/problem/Producto-punto-de-dos-vectores/
+- https://omegaup.com/arena/problem/Rango-simple/
+- https://omegaup.com/arena/problem/Contar-Valor/
+- https://omegaup.com/arena/problem/Cuadrados-Pintados-al-reves/
+- https://omegaup.com/arena/problem/Montones-de-Caramelos/
+- https://omegaup.com/arena/problem/Girando-vector/
+- https://omegaup.com/arena/problem/Dias-de-Pan/
 
 #### Arreglos: Ejercicios de ordenamiento
 - https://judge.beecrowd.com/es/problems/view/1025
