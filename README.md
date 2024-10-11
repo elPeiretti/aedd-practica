@@ -6,7 +6,10 @@
 2. [Tipos de dato y operadores](./2-tipos-de-dato-y-operadores/presentacion.pdf)
 3. [Estructuras de control](./3-estructuras-de-control/presentacion.pdf)
 4. [Funciones](./4-funciones/presentacion.pdf)
-5. [Arreglos](./5-arreglos/)
+5. Arreglos  
+    5.1. [Conceptos básicos](./5-arreglos/1-conceptos/presentacion.pdf)  
+    5.2. [Operaciones](./5-arreglos/2-operaciones/presentacion.pdf)  
+    5.3. [Matrices](./5-arreglos/3-matrices/presentacion.pdf)
 6. Strings
 7. Structs
 8. Complejidad
