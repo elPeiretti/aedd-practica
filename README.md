@@ -10,7 +10,7 @@
     5.1. [Conceptos básicos](./5-arreglos/1-conceptos/presentacion.pdf)  
     5.2. [Operaciones](./5-arreglos/2-operaciones/presentacion.pdf)  
     5.3. [Matrices](./5-arreglos/3-matrices/presentacion.pdf)
-6. Strings
+6. [Strings](./6-strings/presentacion.pdf)
 7. Structs
 8. Complejidad
 9. Archivos
