@@ -1,0 +1,207 @@
+\documentclass[12pt]{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Copenhagen}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\graphicspath{ {imagenes/} }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    language=c++,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Estructuras (struct)}
+\subtitle{Conceptos}
+\author{Tomás Peiretti}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile]{Estructuras}
+    Una estructura es un conjunto de datos agrupados bajo un mismo nombre. Estos datos se conocen como \alert{miembros} y pueden tener diferentes tipos.
+
+    \medskip
+
+    \begin{columns}
+        \column{0.5\textwidth}\includegraphics[width=\textwidth]{sintaxis_struct.png}
+        \column{0.5\textwidth}\begin{lstlisting}
+struct Alumno {
+    int edad;
+    char carrera;
+    int notas[45];
+    int tl_notas;
+};
+
+int main() {
+    Alumno a1, a2;
+}
+\end{lstlisting}
+    \end{columns}
+\end{frame}
+
+
+\begin{frame}[fragile]{Estructuras: acceso a los miembros}
+    Los miembros de la estructura pueden ser accedidos de manera directa haciendo uso del \alert{'.'} como se muestra en el siguiente ejemplo:
+
+    \medskip
+\begin{lstlisting}[basicstyle=\tiny]
+struct Alumno {
+    int edad;
+    char carrera;
+    int notas[45];
+    int tl_notas = 0;
+} a1;
+
+int main() {
+    a1.edad = 19;
+    a1.carrera = 'S';
+    a1.notas[0] = 10;
+    a1.notas[1] = 9;
+    a1.tl_notas = 2;
+    
+    cout << "edad: " << a1.edad << endl; // imprime 19
+    cout << "carrera: " << a1.carrera << endl; // imprime S
+    cout << "nota en AEDD: " << a1.notas[0] << endl; // imprime 10 
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Estructuras: anidaciones}
+    Además, es posible utilizar estructuras dentro de otras estructuras:
+
+    \medskip
+\begin{lstlisting}[basicstyle=\tiny]
+struct Punto {
+    int x;
+    int y;
+};
+
+struct Recta {
+    Punto punto;
+    double pendiente;
+};
+
+int main() {
+    Punto p1 = {0, 10};
+    Recta r1;
+    r1.punto = p1;
+    r1.pendiente = 2.5;
+
+    cout << "La recta tiene pendiente = " << r1.pendiente << endl;
+    cout << "y pasa por (" << r1.punto.x << "," << r1.punto.y << ")" << endl;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Estructuras: pasaje por parámetros}
+    \centering Todas las estructuras por defecto \alert{pasan por copia}.
+
+    \medskip
+\begin{lstlisting}[basicstyle=\tiny]
+struct Punto {
+    int x;
+    int y;
+};
+struct Recta {
+    Punto punto;
+    double pendiente;
+};
+
+void limpiarPunto1(Recta & r) {
+    r.punto.x = 0;
+    r.punto.y = 0;
+}
+void limpiarPunto2(Recta r) {
+    r.punto.x=-1;
+    r.punto.y=-1;
+}
+
+int main() {
+    Recta r1 = {{5, 10}, 2.5};
+    limpiarPunto2(r1);
+    // como no pasa por referencia, imprime (5,10)
+    cout << "(" << r1.punto.x << "," << r1.punto.y << ")" << endl;
+    limpiarPunto1(r1);
+    // como pasa por referencia, imprime (0,0)
+    cout << "(" << r1.punto.x << "," << r1.punto.y << ")" << endl;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Ejercicio}
+    Supongamos el siguiente problema: \\
+    \medskip
+    Se deben leer los datos de diferentes animales e imprimir el nombre de los animales \alert{ordenados segun su altura}. \\
+    \medskip
+    Primero se ingresa un entero N, que indica la cantidad de animales. Luego siguen N lineas, cada una indicando el nombre, la altura (en cm) y el peso (en kg) de un animal
+\end{frame}
+
+\begin{frame}[fragile]{Ejercicio: solución}
+\begin{lstlisting}[basicstyle=\tiny]
+struct Animal {
+    string nombre;
+    double peso;
+    double altura;
+};
+
+void ordenarPorAltura(Animal a[], int tl);
+
+int main() {
+    int n;
+    Animal animales[10000];
+
+    cin >> n;
+    for (int i=0; i<n; i++)
+        cin >> animales[i].nombre >> animales[i].peso >> animales[i].altura;
+
+    ordenarPorAltura(animales, n);
+    for (int i=0; i<n; i++)
+       cout << animales[i].nombre << endl;
+}
+
+void ordenarPorAltura(Animal a[], int tl) {
+    for (int i=0; i<tl; i++) {
+        for(int j=i+1; j<tl; j++) {
+            if (a[i].altura > a[j].altura)
+                swap(a[i], a[j]);
+        }
+    }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Ejercicios}
+    \begin{itemize}
+        \item \href{https://judge.beecrowd.com/es/problems/view/1258}{Beecrowd 1258}
+        \item Ejercicios de la guía práctica de estructuras
+    \end{itemize}
+\end{frame}
+
+\end{document}
