@@ -11,7 +11,7 @@
     5.2. [Operaciones](./5-arreglos/2-operaciones/presentacion.pdf)  
     5.3. [Matrices](./5-arreglos/3-matrices/presentacion.pdf)
 6. [Strings](./6-strings/presentacion.pdf)
-7. Structs
+7. [Structs](./7-structs/7.1-conceptos/presentacion.pdf)
 8. Complejidad
 9. Archivos
 10. Punteros
@@ -49,7 +49,7 @@
 | [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) | [Microprocesador](./parciales/parcial-2/papel/Microprocesador.pdf) |
 | [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) | [Tunel Subfluvial](./parciales/parcial-2/papel/Tunel-Subfluvial.pdf)
 | [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) | [Hacker no Benigno](./parciales/parcial-2/papel/Hacker-no-Benigno.pdf)
-| [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) |
+| [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) | [Secuencias de Nelson](./parciales/parcial-2/papel/Secuencias_de_Nelson.pdf) |
 | [Amartizando](./parciales/parcial-1/papel/Amartizando.pdf) |
 | [Entrenamientos](./parciales/parcial-1/papel/Entrenamientos.pdf) |
 | [Final de salto con garrocha](./parciales/parcial-1/papel/Final-de-salto-con-garrocha.pdf) |
