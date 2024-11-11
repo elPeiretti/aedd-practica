@@ -50,7 +50,7 @@
 | [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) | [Tunel Subfluvial](./parciales/parcial-2/papel/Tunel-Subfluvial.pdf)
 | [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) | [Hacker no Benigno](./parciales/parcial-2/papel/Hacker-no-Benigno.pdf)
 | [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) | [Secuencias de Nelson](./parciales/parcial-2/papel/Secuencias_de_Nelson.pdf) |
-| [Amartizando](./parciales/parcial-1/papel/Amartizando.pdf) |
+| [Amartizando](./parciales/parcial-1/papel/Amartizando.pdf) | [MatrizTecno](./parciales/parcial-2/papel/MatrizTecno.pdf)
 | [Entrenamientos](./parciales/parcial-1/papel/Entrenamientos.pdf) |
 | [Final de salto con garrocha](./parciales/parcial-1/papel/Final-de-salto-con-garrocha.pdf) |
 
