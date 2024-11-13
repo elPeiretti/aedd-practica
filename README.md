@@ -12,8 +12,10 @@
     5.3. [Matrices](./5-arreglos/3-matrices/presentacion.pdf)
 6. [Strings](./6-strings/presentacion.pdf)
 7. [Structs](./7-structs/7.1-conceptos/presentacion.pdf)
-8. Complejidad
-9. Archivos
+8. [Complejidad](./8-complejidad/presentacion.pdf)
+9. Archivos  
+    9.1. [Archivos de texto](./9-archivos/9.1-archivos-de-texto/presentacion.pdf)  
+    9.2. Archivos binarios
 10. Punteros
 
 ## Ejercicios de parcial para practicar
