@@ -1,0 +1,250 @@
+\documentclass[12pt]{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Copenhagen}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\graphicspath{ {imagenes/} }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    language=c++,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Archivos}
+\subtitle{Archivos binarios}
+\author{Tomás Peiretti}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Archivos binarios}
+    Puntos clave:
+    \begin{itemize}
+        \item C++ trabaja cada archivo como un \alert{flujo secuencial de bytes} (podemos pensarlo como un arreglo de bytes)
+        \item Permiten almacenar estructuras (struct) completas
+        \item Es posible utilizar acceso directo para leer/escribir
+        \item Hay 3 tipos:
+        \begin{itemize}
+            \item De entrada: \alert{ifstream}
+            \item De salida: \alert{ofstream}
+            \item De entrada/salida: \alert{fstream}
+        \end{itemize}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}{Archivos binarios: implementación}
+    Al igual que los archivos de texto, para utilizar un archivo binario en nuestro programa debemos:
+        \begin{enumerate}
+            \item Incluir la librería fstream
+            \item Declarar la variable que actuará como manejador de fichero
+            \item Abrir el flujo de datos, vinculando la variable correspondiente con el fichero especificado.
+            \item Comprobar que la apertura del fichero se realizó correctamente
+            \item \alert{Realizar la transferencia de información}
+            \item Finalmente, cerrar el flujo para liberar la variable manejador de su vinculación con el fichero.
+        \end{enumerate}
+\end{frame}
+
+\begin{frame}[fragile]{Archivos binarios: implementación}
+\begin{lstlisting}[basicstyle=\scriptsize]
+#include <iostream>
+#include <fstream>  //1
+using namespace std;
+
+int main() {
+	ifstream archivo; // 2
+	archivo.open("text.data", ios::binary); // 3
+	
+	if (archivo.is_open()) { // 4
+		int x;
+		archivo.read((char *) &x, sizeof(x)); // 5
+		cout << "Valor en el archivo = " << x << endl;
+	}
+	else {
+		cout << "Error al abrir el archivo" << endl;
+	}
+	
+	archivo.close(); // 6
+	
+	return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Leer de un archivo binario}
+    Para leer un archivo binario usaremos el método \alert{read} de la siguiente manera: \\
+    \begin{center}
+         .read((char *) \& \alert{variable}, sizeof(\alert{variable}))
+    \end{center}
+    Esto leerá un bloque de datos (bytes) del tamaño de la variable y lo transformará al tipo de dato de la variable
+\end{frame}
+
+\begin{frame}[fragile]{Leer de un archivo binario: ejemplo}
+\begin{lstlisting}[basicstyle=\tiny]
+struct Figura {
+	int cantLados;
+	int perimetro;
+	double area;
+};
+
+int main() {
+	ifstream archFiguras;
+	ifstream archNumeros;
+	archFiguras.open("figuras.data", ios::binary);
+	archNumeros.open("numeros.bin", ios::binary);
+	
+	
+	if (archFiguras.is_open() && archNumeros.is_open()) {
+		Figura f;
+		int num;
+		archFiguras.read((char *) &f, sizeof(f));
+		archNumeros.read((char *) &num, sizeof(num));
+		cout << "Numero en el archivo = " << num << endl;
+		cout << "Perimetro de la figura en archivo = " << f.perimetro << endl;
+	}
+	else {
+		cout << "Error al abrir los archivos" << endl;
+	}
+	
+	archFiguras.close();
+	archNumeros.close();
+	
+	return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Escribir en un archivo binario}
+    Para escribir un archivo binario usaremos el método \alert{write} de la siguiente manera: \\
+    \begin{center}
+        .write((char *) \& \alert{variable}, sizeof(\alert{variable})) \\
+    \end{center}
+    Esto grabará un bloque de datos (bytes) del tamaño de la variable con los bytes correspondientes \\
+\end{frame}
+
+\begin{frame}[fragile]{Escribir en un archivo binario: ejemplo}
+\begin{lstlisting}[basicstyle=\tiny]
+struct Figura {
+	int cantLados;
+	int perimetro;
+	double area;
+};
+
+int main(int argc, char *argv[]) {
+	ofstream archFiguras;
+	ofstream archNumeros;
+	archFiguras.open("figuras.data", ios::binary);
+	archNumeros.open("numeros.bin", ios::binary);
+	
+	if (archFiguras.is_open() && archNumeros.is_open()) {
+		Figura f = {4, 20, 25};
+		int num = 96;
+		archFiguras.write((char *) &f, sizeof(f));
+		archNumeros.write((char *) &num, sizeof(num));
+	}
+	else {
+		cout << "Error al abrir los archivos" << endl;
+	}
+	
+	archFiguras.close();
+	archNumeros.close();
+	
+	return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Decidir donde leer/escribir}
+\begin{lstlisting}[basicstyle=\tiny]
+struct Figura {
+    int cantLados;
+    int perimetro;
+    double area;
+};
+// Actualizar el perimetro y area de la 4ta figura (que es un cuadrado)
+// para que se corresponda a un cuadrado de lado = 10
+int main() {
+    fstream archFiguras;
+    archFiguras.open("figuras.data", ios::binary | ios::in | ios::out);
+    // suponiendo que se pudo abrir el archivo,
+    // calculo la posicion de inicio de los bytes
+    //     que corresponden a la 4ta figura
+    int posFig4 = sizeof(Figura) * 3;
+    Figura figura4;
+    // muevo el puntero de lectura del archivo
+    archFiguras.seekg(posFig4);
+    // leo los datos de la figura persistida
+    archFiguras.read((char *) &figura4, sizeof(figura4));
+    // actualizo el perimetro y el area
+    figura4.perimetro = 40;
+    figura4.area = 100;
+    // muevo el puntero de escritura del archivo
+    archFiguras.seekp(posFig4);
+    // guardo los cambios sobre el archivo
+    archFiguras.write((char *) &figura4, sizeof(figura4));
+
+    archFiguras.close();
+    return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Yapa: Leer un arreglo completo}
+\begin{lstlisting}[basicstyle=\tiny]
+struct Figura {
+    int cantLados;
+    int perimetro;
+    double area;
+};
+
+int main() {
+    ifstream archFiguras;
+    archFiguras.open("figuras.data", ios::binary);
+    
+    Figura figuras[100];
+    if (archFiguras.is_open()) {
+        archFiguras.read((char *) &figuras, sizeof(figuras));
+	}
+	else {
+		cout << "Error al abrir los archivos" << endl;
+	}
+
+    archFiguras.close();
+    return 0;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Desafío}
+    \alert{Desafío:} desarrollar una función que permita encontrar una figura a partir de la cantidad de lados provista. \\ 
+    \medskip
+    La búsqueda debe realizarse sobre un archivo binario de figuras, el cual contiene las figuras ordenadas por su cantidad de lados. 
+\end{frame}
+
+\end{document}
