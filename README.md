@@ -2,20 +2,20 @@
 
 ## Listado de temas
 
-1. [Introducción: estructura básica de un programa en C++](./1-introduccion/presentacion.pdf)
-2. [Tipos de dato y operadores](./2-tipos-de-dato-y-operadores/presentacion.pdf)
-3. [Estructuras de control](./3-estructuras-de-control/presentacion.pdf)
-4. [Funciones](./4-funciones/presentacion.pdf)
+1. [Introducción: estructura básica de un programa en C++](./0-introduccion/presentacion.pdf)
+2. [Tipos de dato y operadores](./1-tipos-de-dato-y-operadores/presentacion.pdf)
+3. [Estructuras de control](./2-estructuras-de-control/presentacion.pdf)
+4. [Funciones](./3-funciones/presentacion.pdf)
 5. Arreglos  
-    5.1. [Conceptos básicos](./5-arreglos/1-conceptos/presentacion.pdf)  
-    5.2. [Operaciones](./5-arreglos/2-operaciones/presentacion.pdf)  
-    5.3. [Matrices](./5-arreglos/3-matrices/presentacion.pdf)
-6. [Strings](./6-strings/presentacion.pdf)
-7. [Structs](./7-structs/7.1-conceptos/presentacion.pdf)
-8. [Complejidad](./8-complejidad/presentacion.pdf)
+    5.1. [Conceptos básicos](./4-arreglos/4.1-conceptos/presentacion.pdf)  
+    5.2. [Operaciones](./4-arreglos/4.2-operaciones/presentacion.pdf)  
+    5.3. [Matrices](./4-arreglos/4.3-matrices/presentacion.pdf)
+6. [Strings](./5-strings/presentacion.pdf)
+7. [Structs](./6-structs/6.1-conceptos/presentacion.pdf)
+8. [Complejidad](./7-complejidad/presentacion.pdf)
 9. Archivos  
-    9.1. [Archivos de texto](./9-archivos/9.1-archivos-de-texto/presentacion.pdf)  
-    9.2. Archivos binarios
+    9.1. [Archivos de texto](./8-archivos/8.1-archivos-de-texto/presentacion.pdf)  
+    9.2. [Archivos binarios](./8-archivos/8.2-archivos-binarios/presentacion.pdf) 
 10. Punteros
 
 ## Ejercicios de parcial para practicar
