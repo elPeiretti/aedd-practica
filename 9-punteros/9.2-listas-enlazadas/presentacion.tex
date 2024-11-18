@@ -1,0 +1,293 @@
+\documentclass[12pt]{beamer}
+\setbeamertemplate{navigation symbols}{}
+\usetheme{Copenhagen}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{multicol}
+\usepackage{multirow}
+\graphicspath{ {imagenes/} }
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    language=c++,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\title{Punteros}
+\subtitle{Listas Enlazadas}
+\author{Tomás Peiretti}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Listas enlazadas}
+    Una lista enlazada es una \alert{estructura de datos dinámica} que almacena los datos de forma secuencial, no contigua.
+    \begin{itemize}
+        \item Que sea dinámica significa que su tamaño físico puede variar durante tiempo de ejecución y que sus elementos se almacenan en diferentes porciones de la memoria.
+    \end{itemize}
+    \begin{table}[]
+        \centering
+        \begin{tabular}{|c|c|c|}
+            \hline
+            Operación & Arreglos & Listas enlazadas \\ \hline
+            Buscar un elemento & O(N) & O(N) \\ \hline
+            Acceder a un elemento & O(1) & O(N) \\ \hline
+            Eliminar un elemento & O(N) & O(1) \\ \hline
+            Agregar un elemento & O(N) & O(1) \\ \hline
+        \end{tabular}
+    \end{table}
+    \includegraphics[width=\textwidth]{lista_enlazada.png}
+\end{frame}
+
+\begin{frame}[fragile]{Listas enlazadas: implementación}
+   \includegraphics[width=\textwidth]{lista_enlazada.png}
+\begin{lstlisting}[basicstyle=\tiny]
+// cada elemento (nodo) contiene datos/informacion del elemento y
+// la referencia (un puntero) al nodo siguiente.
+// Ejemplo: Lista enlazada de enteros
+struct Nodo {
+    int num;
+    Nodo * sig;
+};
+// Ejemplo: Lista enlazada de Personas
+struct Persona {
+    string nombre;
+    int edad;
+    int altura;
+};
+
+struct NodoP {
+    Persona p;
+    NodoP * sig;
+};
+
+int main() {
+    // para manejar la lista enlazada,
+    // utilizaremos un puntero cabecera (HEAD)
+    // el cual apuntara al primer elemento de la lista
+    Nodo * listaEnteros;
+    NodoP * listaPersonas;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Listas enlazadas: creación y eliminación de nodos}
+    Para crear un nuevo nodo/elemento, debemos reservar memoria. Para esto, utilizaremos la instrucción \alert{new}. \\
+    \medskip
+    \alert{new} permite reservar memoria para una cantidad especifica de bytes y retorna un puntero al objeto creado. En el caso de que no haya memoria, retorna un puntero NULL. \\
+    \medskip
+\begin{lstlisting}[basicstyle=\tiny]
+struct Nodo {
+    int num;
+    Nodo * sig;
+};
+
+int main() {
+    // creamos una lista enlazada con un unico elemento
+    Nodo * lista = new Nodo;
+    // chequeamos si se pudo crear el nodo
+    if (lista != NULL) {
+        lista->num = 100;
+        lista->sig = NULL;
+    } else {
+        cout << "ERROR - NO HAY MEMORIA DISPONIBLE" << endl;
+    }
+    // Luego, al eliminar un elemento, debemos liberar la memoria
+    delete lista;
+    lista = NULL;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Listas enlazadas: Operaciones}
+    ¿Qué operaciones debemos saber realizar con las listas enlazadas para aprobar AEDD?
+    \begin{columns}
+        \column{0.6\textwidth}\begin{itemize}
+            \item Eliminar/agregar un elemento
+            \item Buscar un elemento
+            \item Unir dos listas
+            \item Invertir una lista
+            \item Ordenar (SelectionSort, InsertionSort, etc)
+        \end{itemize}
+        \column{0.5\textwidth}\includegraphics[width=\textwidth]{linked_meme.jpg}
+    \end{columns}
+\end{frame}
+
+\begin{frame}[fragile]{Operaciones: Creación de nodo}
+\begin{lstlisting}[basicstyle=\tiny]
+struct Nodo {
+    int num;
+    Nodo * sig = NULL;
+};
+
+bool agregarNodo(int num, Nodo * &lista) {
+    Nodo * nuevo = new Nodo;
+    if (nuevo == NULL) {
+        return false;
+    }
+    
+    nuevo->num = num;
+    // si la lista esta vacia
+    if (lista == NULL) {
+        lista = nuevo;
+        return true;
+    }
+
+    // para agregar un nodo, debemos ir hasta el ultimo
+    Nodo * aux = lista;
+    while (aux->sig != NULL) {
+        aux = aux->sig;
+    }
+    // teniendo el ultimo nodo, agregamos el nuevo
+    aux -> sig = nuevo;
+    return true;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Operaciones: Creación de nodo 2}
+\begin{lstlisting}[basicstyle=\tiny]
+bool agregarNodo(int num, int pos, Nodo * &lista) {
+    Nodo * nuevo = new Nodo;
+    if (nuevo == NULL) {
+        return false;
+    }
+    nuevo->num = num;
+    // si se desea agregar como primer elemento:
+    if (pos == 0) {
+        nuevo->sig = lista;
+        lista = nuevo;
+        return true;
+    }
+    // para agregar un nodo en pos, debemos ir hasta la posicion previa
+    Nodo * aux = lista;
+    int i = 0;
+    while (aux != NULL && i<pos-1) {
+        aux = aux->sig;
+        i++;
+    }
+    if (aux == NULL) {
+        delete nuevo;
+        return false;
+    }
+    
+    nuevo->sig = aux->sig;
+    aux->sig = nuevo;
+    return true;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Operaciones: Buscar un elemento}
+\begin{lstlisting}[basicstyle=\scriptsize]
+struct Nodo {
+    int num;
+    Nodo * sig = NULL;
+};
+
+void buscarNum(int num, Nodo * lista) {
+    int pos = 0;
+    while(lista != NULL && lista->num != num) {
+        lista = lista->sig;
+        pos++;
+    }
+    
+    if (lista == NULL) {
+        cout << "No se ha encontrado a " << num << " en la lista"<<endl;
+    } else {
+        cout << num << " se encuentra en el nodo " << pos << endl;
+    }
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Operaciones: Eliminar un elemento}
+\begin{lstlisting}[basicstyle=\tiny]
+struct Nodo {
+    int num;
+    Nodo * sig = NULL;
+};
+
+void eliminar(int num, Nodo * &lista) {
+    Nodo * aux = lista;
+    Nodo * prev = NULL;
+    while (aux != NULL && aux->num != num) {
+        prev = aux;
+        aux = aux->sig;
+    }
+
+    // nada que eliminar, no se encontro
+    if (aux == NULL) {
+        return;
+    }
+    
+    // el nodo a eliminar es el primero
+    if (prev == NULL) {
+        lista = aux->sig;
+    } else {
+        prev->sig = aux->sig;
+    }
+    delete aux;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Operaciones: Invertir una lista}
+\begin{lstlisting}[basicstyle=\scriptsize]
+struct Nodo {
+    int num;
+    Nodo * sig = NULL;
+};
+
+void invertir(Nodo * &lista) {
+    // lista vacia, nada que invertir
+    if (lista == NULL) {
+        return;
+    }
+
+    Nodo * prev = NULL;
+    Nodo * actual = lista;
+
+    while (actual != NULL) {
+        Nodo * sig = actual->sig;
+        actual->sig = prev;
+        prev = actual;
+        actual = sig;
+    }
+    lista = prev;
+}
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}{Ejercicios}
+    \begin{itemize}
+        \item Guía de ejercicios de práctica de la cátedra
+    \end{itemize}
+\end{frame}
+
+\end{document}
