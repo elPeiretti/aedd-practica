@@ -16,7 +16,9 @@
 9. Archivos  
     9.1. [Archivos de texto](./8-archivos/8.1-archivos-de-texto/presentacion.pdf)  
     9.2. [Archivos binarios](./8-archivos/8.2-archivos-binarios/presentacion.pdf) 
-10. Punteros
+10. Punteros  
+    10.1. [Conceptos](./9-punteros/9.1-conceptos/presentacion.pdf)  
+    10.2. [Listas enlazadas](./9-punteros/9.2-listas-enlazadas/presentacion.pdf)
 
 ## Ejercicios de parcial para practicar
 
