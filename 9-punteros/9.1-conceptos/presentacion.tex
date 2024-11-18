@@ -45,13 +45,14 @@
 \maketitle
 
 \begin{frame}[fragile]{Puntero: definición}
-    Un puntero es una \alert{variable que almacena la dirección en memoria} de otra variable. 
-    Se dice que los punteros "apuntan a" la variable cuya dirección almacenan. \\
     \begin{columns}
         \begin{column}{0.7\textwidth}
+            Un puntero es una \alert{variable que almacena la dirección en memoria} de otra variable. 
+            Se dice que los punteros "apuntan a" la variable cuya dirección almacenan. \\
+            \medskip
             Si tenemos \textit{int \alert{*} miPuntero;} diremos que \textit{miPuntero} es un puntero que apunta a un entero
             \medskip
-            \begin{lstlisting}[basicstyle=\scriptsize]
+\begin{lstlisting}[basicstyle=\scriptsize]
 int main() {
     int num = 97;
     int * miPuntero = & num;
@@ -62,6 +63,8 @@ int main() {
         \end{column}
         \begin{column}{0.3\textwidth}
             \includegraphics[width=0.8\textwidth]{puntero.png}
+            \medskip
+            \includegraphics[width=0.7\textwidth]{puntero_meme.jpg}
         \end{column}
     \end{columns}
 \end{frame}
@@ -134,6 +137,32 @@ int main() {
 	for (int * i = arr; i < arr+5 ; i++) {
 		cout << *i << " ";
 	}
+}        
+\end{lstlisting}
+\end{frame}
+
+\begin{frame}[fragile]{Punteros y structs}
+\begin{lstlisting}[basicstyle=\scriptsize]
+struct Punto {
+    short x;
+    short y;
+};
+
+// cuando se trabaja con punteros a struct
+// es posible utilizar el operador '->'
+// para acceder a cada miembro, sin tener que 
+// desreferenciar el puntero
+int main() {
+	Punto p = {10, 5};
+	Punto * pPunto = & p;
+	
+    // en lugar de tener que desreferenciar con *:
+    cout << (*pPunto).x << " " << (*pPunto).y << endl;
+
+    // podemos hacer lo siguiente:
+    cout << pPunto->x << " " << pPunto->y << endl;
+
+    return 0;
 }        
 \end{lstlisting}
 \end{frame}
