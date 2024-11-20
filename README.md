@@ -27,7 +27,7 @@
 | Parcial 1 | Parcial 2 | Parcial 3 |
 |:---------:|:---------:|:---------:|
 | [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) ([solución](./parciales/parcial-1/sitio-juez/Numero-feliz.cpp)) | [Triangular 1](./parciales/parcial-2/sitio-juez/Triangular1.pdf) | [Borrado en Lista Enlazada 1](./parciales/parcial-3/sitio-juez/2023-Enlazadas-1.pdf)
-| [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) | [Triangular 3](./parciales/parcial-2/sitio-juez/Triangular3.pdf) |
+| [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) | [Triangular 3](./parciales/parcial-2/sitio-juez/Triangular3.pdf) | [Inserción en Lista Enlazada](./parciales/parcial-3/sitio-juez/2023-Enlazadas-2.pdf)
 | [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Triangular 4](./parciales/parcial-2/sitio-juez/Triangular4.pdf) |
 | [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) | [Triangular 5](./parciales/parcial-2/sitio-juez/Triangular5.pdf) |
 | [Sistema de Tarifas de Envío](./parciales/parcial-1/sitio-juez/Tarifas-de-Envio.pdf) | [Cuadrados Impares](./parciales/parcial-2/sitio-juez/Cuadrados_Impares.pdf) |
@@ -48,12 +48,12 @@
 
 ### Ejercicios en Papel
 
-| Parcial 1 | Parcial 2 |
-|:---------:|:---------:|
-| [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) | [Microprocesador](./parciales/parcial-2/papel/Microprocesador.pdf) |
-| [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) | [Tunel Subfluvial](./parciales/parcial-2/papel/Tunel-Subfluvial.pdf)
-| [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) | [Hacker no Benigno](./parciales/parcial-2/papel/Hacker-no-Benigno.pdf)
-| [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) | [Secuencias de Nelson](./parciales/parcial-2/papel/Secuencias_de_Nelson.pdf) |
+| Parcial 1 | Parcial 2 | Parcial 3 |
+|:---------:|:---------:|:---------:|
+| [Hábitos de estudio](./parciales/parcial-1/papel/Habitos-de-estudio.pdf) | [Microprocesador](./parciales/parcial-2/papel/Microprocesador.pdf) | [Ciudades enlazadas](./parciales/parcial-3/papel/Ciudades-enlazadas.pdf)
+| [Covid 19](./parciales/parcial-1/papel/Covid-19.pdf) | [Tunel Subfluvial](./parciales/parcial-2/papel/Tunel-Subfluvial.pdf) | [Servicio Meteorológico Nacional](./parciales/parcial-3/papel/SMN.pdf)
+| [Geoposicionamiento](./parciales/parcial-1/papel/Geoposicionamiento.pdf) | [Hacker no Benigno](./parciales/parcial-2/papel/Hacker-no-Benigno.pdf) | [Vehículos Eléctricos](./parciales/parcial-3/papel/Vehiculos-electricos.pdf)
+| [Patentes-Mercosur](./parciales/parcial-1/papel/Patentes-Mercosur.pdf) ([solución](./parciales/parcial-1/papel/Patentes-Mercosur.cpp)) | [Secuencias de Nelson](./parciales/parcial-2/papel/Secuencias_de_Nelson.pdf) | [Localidades](./parciales/parcial-3/papel/Localidades.pdf)
 | [Amartizando](./parciales/parcial-1/papel/Amartizando.pdf) | [MatrizTecno](./parciales/parcial-2/papel/MatrizTecno.pdf)
 | [Entrenamientos](./parciales/parcial-1/papel/Entrenamientos.pdf) |
 | [Final de salto con garrocha](./parciales/parcial-1/papel/Final-de-salto-con-garrocha.pdf) |
