@@ -61,10 +61,12 @@
 ## Ejercicios de examen final
 | Sitio Juez | Papel |
 |:----------:|:-----:|
-| [OmegaUp - 22/12/20](./finales/sitio-juez/OmegaUp-22-12-2020.pdf) |
-| [OmegaUp - 7/4/21](./finales/sitio-juez/OmegaUp-07-04-2021.pdf) |
-| [OmegaUp - 7/7/21](./finales/sitio-juez/OmegaUp-07-07-2021.pdf) |
-| [OmegaUp - 28/7/21](./finales/sitio-juez/OmegaUp-28-07-2021.pdf) |
+| [OmegaUp - 22/12/20](./finales/sitio-juez/OmegaUp-22-12-2020.pdf) | [Examen final - 1/10/2019](./finales/papel/Final-1-10-2019.pdf)
+| [OmegaUp - 7/4/21](./finales/sitio-juez/OmegaUp-07-04-2021.pdf) | [Examen final - 30/7/2019](./finales/papel/Final-30-7-2019.pdf)
+| [OmegaUp - 7/7/21](./finales/sitio-juez/OmegaUp-07-07-2021.pdf) | [Examen final - 18/2/2020](./finales/papel/Final-18-2-2020.pdf)
+| [OmegaUp - 28/7/21](./finales/sitio-juez/OmegaUp-28-07-2021.pdf) | [Examen final - 2/9/2020](./finales/papel/Final-2-9-2020.pdf)
+| | [Examen final - 7/10/2020](./finales/papel/Final-7-10-2020.pdf)
+| | [Decatlón Mixto - 24/7/2024](./finales/papel/Decatlon-Mixto-24-7-2024.pdf)
 
 ## Listado de problemas por categoría
 
