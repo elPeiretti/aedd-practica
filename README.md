@@ -59,23 +59,23 @@
 | [Final de salto con garrocha](./parciales/parcial-1/papel/Final-de-salto-con-garrocha.pdf) |
 
 ## Ejercicios de examen final
-| Sitio Juez | Papel |
-|:----------:|:-----:|
-| [OmegaUp - 22/12/20](./finales/sitio-juez/OmegaUp-22-12-2020.pdf) | [Examen final - 1/10/2019](./finales/papel/Final-1-10-2019.pdf)
-| [OmegaUp - 7/4/21](./finales/sitio-juez/OmegaUp-07-04-2021.pdf) | [Examen final - 30/7/2019](./finales/papel/Final-30-7-2019.pdf)
-| [OmegaUp - 7/7/21](./finales/sitio-juez/OmegaUp-07-07-2021.pdf) | [Examen final - 18/2/2020](./finales/papel/Final-18-2-2020.pdf)
-| [OmegaUp - 28/7/21](./finales/sitio-juez/OmegaUp-28-07-2021.pdf) | [Examen final - 2/9/2020](./finales/papel/Final-2-9-2020.pdf)
-| [OmegaUp - 6/7/22](./finales/sitio-juez/OmegaUp-06-07-2022.pdf) | [Examen final - 7/10/2020](./finales/papel/Final-7-10-2020.pdf)
-| [OmegaUp - 14/12/22](./finales/sitio-juez/OmegaUp-14-12-2022.pdf) | [Decatlón Mixto - 24/7/2024](./finales/papel/Decatlon-Mixto-24-7-2024.pdf)
-| | [Examen final - 23/5/2022](./finales/papel/Final-23-5-2022.pdf)
-| | [Examen final - 6/7/2022](./finales/papel/Final-6-7-2022.pdf)
-| | [Examen final - 14/9/2022](./finales/papel/Final-14-9-2022.pdf)
-| | [Examen final - 19/10/2022](./finales/papel/Final-19-10-2022.pdf)
-| | [Examen final - 14/12/2022](./finales/papel/Final-14-12-2022.pdf)
-| | [Examen final - 13/9/2023](./finales/papel/Final-13-9-2023.pdf)
-| | [Examen final - 15/2/2024](./finales/papel/Final-15-2-2024.pdf)
-| | [Examen final - 21/2/2024](./finales/papel/Final-21-2-2024.pdf)
-| | [Examen final - 28/2/2024](./finales/papel/Final-28-2-2024.pdf)
+| Sitio Juez | Papel | Teoría |
+|:----------:|:-----:|:------:|
+| [OmegaUp - 22/12/20](./finales/sitio-juez/OmegaUp-22-12-2020.pdf) | [Examen final - 1/10/2019](./finales/papel/Final-1-10-2019.pdf) | [Teoría - 23/5/2022](./finales/teoria/Teoria-23-5-2022.pdf) |
+| [OmegaUp - 7/4/21](./finales/sitio-juez/OmegaUp-07-04-2021.pdf) | [Examen final - 30/7/2019](./finales/papel/Final-30-7-2019.pdf) | [Teoría - 6/7/2022](./finales/teoria/Teoria-6-7-2022.pdf) |
+| [OmegaUp - 7/7/21](./finales/sitio-juez/OmegaUp-07-07-2021.pdf) | [Examen final - 18/2/2020](./finales/papel/Final-18-2-2020.pdf) | [Teoría - 14/9/2022](./finales/teoria/Teoria-14-9-2022.pdf) |
+| [OmegaUp - 28/7/21](./finales/sitio-juez/OmegaUp-28-07-2021.pdf) | [Examen final - 2/9/2020](./finales/papel/Final-2-9-2020.pdf) | [Teoría - 19/10/2022](./finales/teoria/Teoria-19-10-2022.pdf) |
+| [OmegaUp - 6/7/22](./finales/sitio-juez/OmegaUp-06-07-2022.pdf) | [Examen final - 7/10/2020](./finales/papel/Final-7-10-2020.pdf) | [Teoría - 14/12/2022](./finales/teoria/Teoria-14-12-2022.pdf) |
+| [OmegaUp - 14/12/22](./finales/sitio-juez/OmegaUp-14-12-2022.pdf) | [Decatlón Mixto - 24/7/2024](./finales/papel/Decatlon-Mixto-24-7-2024.pdf) |
+| | [Examen final - 23/5/2022](./finales/papel/Final-23-5-2022.pdf) |
+| | [Examen final - 6/7/2022](./finales/papel/Final-6-7-2022.pdf) |
+| | [Examen final - 14/9/2022](./finales/papel/Final-14-9-2022.pdf) |
+| | [Examen final - 19/10/2022](./finales/papel/Final-19-10-2022.pdf) |
+| | [Examen final - 14/12/2022](./finales/papel/Final-14-12-2022.pdf) |
+| | [Examen final - 13/9/2023](./finales/papel/Final-13-9-2023.pdf) |
+| | [Examen final - 15/2/2024](./finales/papel/Final-15-2-2024.pdf) |
+| | [Examen final - 21/2/2024](./finales/papel/Final-21-2-2024.pdf) |
+| | [Examen final - 28/2/2024](./finales/papel/Final-28-2-2024.pdf) |
 
 
 ## Listado de problemas por categoría
