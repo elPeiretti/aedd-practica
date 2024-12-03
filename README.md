@@ -28,7 +28,7 @@
 |:---------:|:---------:|:---------:|
 | [Número Feliz](./parciales/parcial-1/sitio-juez/Numero-feliz.pdf) ([solución](./parciales/parcial-1/sitio-juez/Numero-feliz.cpp)) | [Triangular 1](./parciales/parcial-2/sitio-juez/Triangular1.pdf) | [Borrado en Lista Enlazada 1](./parciales/parcial-3/sitio-juez/2023-Enlazadas-1.pdf)
 | [Números Cuadrificados](./parciales/parcial-1/sitio-juez/Numeros-Cuadrificados.pdf) | [Triangular 3](./parciales/parcial-2/sitio-juez/Triangular3.pdf) | [Inserción en Lista Enlazada](./parciales/parcial-3/sitio-juez/2023-Enlazadas-2.pdf)
-| [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Triangular 4](./parciales/parcial-2/sitio-juez/Triangular4.pdf) |
+| [Números Ampliables](./parciales/parcial-1/sitio-juez/Numeros-Ampliables.pdf) | [Triangular 4](./parciales/parcial-2/sitio-juez/Triangular4.pdf) | [Ordena Dos](./parciales/parcial-3/sitio-juez/2024-Enlazadas-1.pdf)
 | [Números Narcisistas](./parciales/parcial-1/sitio-juez/Numeros-Narcisistas.pdf) | [Triangular 5](./parciales/parcial-2/sitio-juez/Triangular5.pdf) |
 | [Sistema de Tarifas de Envío](./parciales/parcial-1/sitio-juez/Tarifas-de-Envio.pdf) | [Cuadrados Impares](./parciales/parcial-2/sitio-juez/Cuadrados_Impares.pdf) |
 | [Índice de Masa Corporal](./parciales/parcial-1/sitio-juez/Indice-Masa-Corporal.pdf) ([solución](./parciales/parcial-1/sitio-juez/Indice-Masa-Corporal.cpp)) |  [Cuaternas Diagonal](./parciales/parcial-2/sitio-juez/Cuartetas_Diagonal.pdf) |
