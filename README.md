@@ -65,8 +65,8 @@
 | [OmegaUp - 7/4/21](./finales/sitio-juez/OmegaUp-07-04-2021.pdf) | [Examen final - 30/7/2019](./finales/papel/Final-30-7-2019.pdf)
 | [OmegaUp - 7/7/21](./finales/sitio-juez/OmegaUp-07-07-2021.pdf) | [Examen final - 18/2/2020](./finales/papel/Final-18-2-2020.pdf)
 | [OmegaUp - 28/7/21](./finales/sitio-juez/OmegaUp-28-07-2021.pdf) | [Examen final - 2/9/2020](./finales/papel/Final-2-9-2020.pdf)
-| | [Examen final - 7/10/2020](./finales/papel/Final-7-10-2020.pdf)
-| | [Decatlón Mixto - 24/7/2024](./finales/papel/Decatlon-Mixto-24-7-2024.pdf)
+| [OmegaUp - 6/7/22](./finales/sitio-juez/OmegaUp-06-07-2022.pdf) | [Examen final - 7/10/2020](./finales/papel/Final-7-10-2020.pdf)
+| [OmegaUp - 14/12/22](./finales/sitio-juez/OmegaUp-14-12-2022.pdf) | [Decatlón Mixto - 24/7/2024](./finales/papel/Decatlon-Mixto-24-7-2024.pdf)
 
 ## Listado de problemas por categoría
 
